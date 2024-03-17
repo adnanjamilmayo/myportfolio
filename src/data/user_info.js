@@ -48,6 +48,11 @@ const info = {
             // github: "",
             // link: ""
         },
+        {
+            title: "Food App",
+            description: "Our food web app, built with React and styled using Tailwind CSS, is your go-to destination for discovering and sharing delicious recipes. Browse through a curated collection of recipes, filter by preferences, and save your favorites for easy access. Whether you're looking for quick meal ideas or gourmet inspiration, our app has something for every taste bud.",
+            technologies: "https://skillicons.dev/icons?i=react,tailwindcss,0,0&perline=5&theme="
+        },
     ],
 
     education: [
