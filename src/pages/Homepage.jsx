@@ -206,15 +206,15 @@ function Homepage() {
               className="flex gap-4 text-gray-500 dark:text-gray-300 hover:dark:text-gray-300 hover:text-gray-700 transition-all duration-300 mt-4"
             >
               <FaSquareXTwitter className="self-center text-lg" />
-              <span className="self-center">Follow on Twitter</span>
+              <span className="self-center">Follow on X</span>
             </a>
-            <a
+            {/* <a
               href={user_info.socials.instagram}
               className="flex gap-4 text-gray-500 dark:text-gray-300 hover:dark:text-gray-300 hover:text-gray-700 transition-all duration-300 mt-4"
             >
               <FaInstagram className="self-center text-lg" />
               <span className="self-center">Follow on Instagram</span>
-            </a>
+            </a> */}
             <a
               href={user_info.socials.linkedin}
               className="flex gap-4 text-gray-500 dark:text-gray-300 hover:dark:text-gray-300 hover:text-gray-700 transition-all duration-300 mt-4"

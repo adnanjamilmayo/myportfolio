@@ -3,16 +3,16 @@ const info = {
         name: "Adnan Jamil",
         description: "I am a full stack developer with expertise in full-stack web development. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards.",
         role: "Full Stack Developer",
-        photo: "../photo.jpg",
+        photo: "../photo.png",
         email: "adnanjamilrajpoot@gmail.com",
         tracking_id: "G-BNTTBGHXSC"
     },
 
     socials: {
-        twitter: "https://twitter.com/iadnanjamil",
+        twitter: "https://x.com/m_adnanjamil",
         github: "https://github.com/adnanjamilmayo",
         linkedin: "https://www.linkedin.com/in/adnanjamilmeo/",
-        instagram: "https://instagram.com/adnan.jamill/",
+        // instagram: "https://instagram.com/adnan.jamill/",
         // facebook: "",
         // telegram: ""
     },
@@ -75,7 +75,7 @@ const info = {
         description: "Thank you for your interest in getting in touch with me. I welcome your feedback, questions, and suggestions. If you have a specific question or comment, please feel free to email me directly at adnanjamilrajpoot@gmail.com. I make an effort to respond to all messages within 24 hours, although it may take me longer during busy periods. Finally, if you prefer to connect on social media, you can connect with me using the social media links below.",
     },
 
-    footer: "© 2024 Adnan Jamil. All Rights Reserved"
+    footer: "© 2025 Adnan Jamil. All Rights Reserved"
 }
 
 export default info
