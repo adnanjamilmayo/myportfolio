@@ -12,6 +12,7 @@ import { useContext } from "react";
 import user_info from "../data/user_info.js";
 import ToggleTheme from "../components/ToggleTheme.jsx";
 import { FaCode, FaServer, FaCloud } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Homepage() {
   const { theme, switchTheme } = useContext(AppContext);
@@ -25,6 +26,21 @@ function Homepage() {
 
   return (
     <div className="min-h-screen bg-[#0f172a] text-white">
+      {/* Navigation Bar */}
+      <div className="max-w-7xl mx-auto px-6 py-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gray-800 rounded-full p-4 flex justify-center items-center gap-8">
+            <Link to="/about" className="text-white font-medium text-sm hover:text-cyan-400 transition-colors cursor-pointer">About</Link>
+            <Link to="/blog" className="text-white font-medium text-sm hover:text-cyan-400 transition-colors cursor-pointer">Blog</Link>
+            <Link to="/projects" className="text-white font-medium text-sm hover:text-cyan-400 transition-colors cursor-pointer">Projects</Link>
+            <Link to="/ai" className="text-white font-medium text-sm hover:text-cyan-400 transition-colors cursor-pointer">AI</Link>
+            <Link to="/lab" className="text-white font-medium text-sm hover:text-cyan-400 transition-colors cursor-pointer">Lab</Link>
+            <Link to="/readings" className="text-white font-medium text-sm hover:text-cyan-400 transition-colors cursor-pointer">Readings</Link>
+            <Link to="/uses" className="text-white font-medium text-sm hover:text-cyan-400 transition-colors cursor-pointer">Uses</Link>
+          </div>
+        </div>
+      </div>
+
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -38,10 +54,10 @@ function Homepage() {
                 className="w-32 h-32 rounded-full mx-auto lg:mx-0 mb-6 object-cover"
                 alt="Profile"
               />
-              <h1 className="text-4xl font-bold text-white mb-2">
+              <h1 className="text-2xl font-bold text-white mb-2">
                 {user_info.main.name}
               </h1>
-              <h2 className="text-xl text-gray-300 mb-4">
+              <h2 className="text-lg text-gray-300 mb-4">
                 {user_info.main.role}
               </h2>
               <p className="text-gray-400 text-lg leading-relaxed">
@@ -87,77 +103,8 @@ function Homepage() {
 
           </div>
 
-          {/* Right Column - Skills & Experience */}
+          {/* Right Column - Experience */}
           <div className="space-y-8">
-            
-            {/* Core Skills */}
-            <div>
-              <h3 className="text-2xl font-bold text-white mb-2">Core Skills</h3>
-              <div className="w-full h-px bg-gray-600 mb-6"></div>
-              
-              {/* Languages */}
-              <div className="mb-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <FaCode className="text-blue-400" />
-                  <span className="text-gray-300 font-medium">Languages</span>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {user_info.skills.languages.map((skill, index) => (
-                    <span
-                      key={index}
-                      className="bg-gray-700 text-white px-3 py-1 rounded-full text-sm"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Backend */}
-              <div className="mb-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <FaServer className="text-blue-400" />
-                  <span className="text-gray-300 font-medium">Backend</span>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {user_info.skills.frameworks.map((skill, index) => (
-                    <span
-                      key={index}
-                      className="bg-gray-700 text-white px-3 py-1 rounded-full text-sm"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                  {user_info.skills.database.map((skill, index) => (
-                    <span
-                      key={index}
-                      className="bg-gray-700 text-white px-3 py-1 rounded-full text-sm"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Cloud */}
-              <div className="mb-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <FaCloud className="text-blue-400" />
-                  <span className="text-gray-300 font-medium">Cloud</span>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {user_info.skills.tools.map((skill, index) => (
-                    <span
-                      key={index}
-                      className="bg-gray-700 text-white px-3 py-1 rounded-full text-sm"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-
             {/* Experience */}
             <div>
               <div className="flex justify-between items-center mb-2">
@@ -213,75 +160,33 @@ function Homepage() {
             </div>
           </div>
         </div>
-
-        {/* Projects Section */}
-        <div className="mt-16">
-          <h3 className="text-3xl font-bold text-white mb-8 text-center">Featured Projects</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {user_info.projects.map((project, index) => (
-              <div
-                key={index}
-                className="bg-gray-800 rounded-lg p-6 hover:bg-gray-750 transition-colors"
-              >
-                <h4 className="text-xl font-semibold text-white mb-3">
-                  {project.title}
-                </h4>
-                <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies && (
-                    <img
-                      src={project.technologies + (theme === 'dark' ? 'dark' : 'light')}
-                      alt="Technologies"
-                      className="h-6"
-                    />
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Education Section */}
-        <div className="mt-16">
-          <h3 className="text-3xl font-bold text-white mb-8 text-center">Education</h3>
-          <div className="max-w-2xl mx-auto">
-            {user_info.education.map((edu, index) => (
-              <div key={index} className="bg-gray-800 rounded-lg p-6">
-                <div className="flex items-center gap-4">
-                  <img
-                    src={edu.image}
-                    alt={edu.school}
-                    className="w-12 h-12 rounded-full object-cover"
-                  />
-                  <div className="flex-1">
-                    <h4 className="text-xl font-semibold text-white">
-                      {edu.school}
-                    </h4>
-                    <p className="text-gray-300">{edu.degree}</p>
-                    <p className="text-gray-400 text-sm">{edu.year}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
 
+
       {/* Footer */}
-      <footer className="border-t border-gray-700 py-8 mt-16">
+      <footer className="border-t border-gray-700 py-8 mt-8">
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-          <p className="text-gray-400 text-sm">
-            {user_info.footer}
-          </p>
-          <button
-            onClick={scrollToTop}
-            className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
-          >
-            <FaArrowCircleUp />
-            Back to top
-          </button>
+          <div className="flex items-center gap-8">
+            <Link to="/about" className="text-white font-medium text-sm hover:text-cyan-400 transition-colors cursor-pointer">About</Link>
+            <Link to="/blog" className="text-white font-medium text-sm hover:text-cyan-400 transition-colors cursor-pointer">Blog</Link>
+            <Link to="/projects" className="text-white font-medium text-sm hover:text-cyan-400 transition-colors cursor-pointer">Projects</Link>
+            <Link to="/ai" className="text-white font-medium text-sm hover:text-cyan-400 transition-colors cursor-pointer">AI</Link>
+            <Link to="/lab" className="text-white font-medium text-sm hover:text-cyan-400 transition-colors cursor-pointer">Lab</Link>
+            <Link to="/readings" className="text-white font-medium text-sm hover:text-cyan-400 transition-colors cursor-pointer">Readings</Link>
+            <Link to="/uses" className="text-white font-medium text-sm hover:text-cyan-400 transition-colors cursor-pointer">Uses</Link>
+          </div>
+          <div className="flex items-center gap-4">
+            <p className="text-gray-400 text-sm">
+              © 2025 Adnan Jamil. All Rights Reserved
+            </p>
+            <button
+              onClick={scrollToTop}
+              className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+            >
+              <FaArrowCircleUp />
+              Back to top
+            </button>
+          </div>
         </div>
       </footer>
     </div>
