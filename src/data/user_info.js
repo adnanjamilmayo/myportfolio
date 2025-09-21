@@ -1,10 +1,11 @@
 const info = {
     main: {
         name: "Adnan Jamil",
-        description: "I am a full stack developer with expertise in full-stack web development. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards.",
+        description: "5+ years building scalable web applications and leading development teams.",
         role: "Full Stack Developer",
         photo: "../photo.png",
-        email: "adnanjamilrajpoot@gmail.com",
+        email: "adnanjamil1109@gmail.com",
+        // location: "Lahore, Pakistan",
         tracking_id: "G-BNTTBGHXSC"
     },
 
@@ -18,19 +19,42 @@ const info = {
     },
 
     skills: {
-        languages: {
-            description: "I possess proficient expertise in a diverse range of programming languages, including C, C++, TypeScript, and JavaScript.",
-            image: "https://skillicons.dev/icons?i=c,cpp,typescript,javascript&perline=6&theme="
-        },
-        frameworks: {
-            description: "Experienced in a versatile tech stack, including React, Express.js, Node.js, Tailwind CSS",
-            image: "https://skillicons.dev/icons?i=react,express,nodejs,tailwind&perline=6&theme="
-        },
-        tools: {
-            description: "I am well-versed in utilizing various tools and platforms to enhance the development process, including Git, Github, Netlify, Vercel and Postman.",
-            image: "https://skillicons.dev/icons?i=git,github,netlify,vercel,postman&perline=6&theme="
-        },
+        languages: ["C", "C++", "JavaScript", "TypeScript"],
+        frameworks: ["NodeJS", "ReactJS", "NextJS", "Tailwind CSS", "Shadcn UI"],
+        database: ["PostgreSQL", "MongoDB", "Supabase"],
+        tools: ["Git", "GitHub", "GitLab"]
     },
+
+    experience: [
+        {
+            title: "Full-stack Developer",
+            company: "Revotic AI",
+            period: "Sep 2025 - Present",
+            location: "Remote",
+            description: "Developing AI-powered applications and full-stack solutions using modern technologies."
+        },
+        {
+            title: "Frontend Developer",
+            company: "Upwork",
+            period: "Mar 2024 - Present",
+            location: "Remote",
+            description: "Freelance frontend development projects using JavaScript, React.js and modern web technologies."
+        },
+        {
+            title: "Frontend Developer",
+            company: "Centre for Economic Research in Pakistan (CERP)",
+            period: "May 2023 - Aug 2023",
+            location: "Lahore, Pakistan",
+            description: "Internship role developing frontend applications using Tailwind CSS, GitHub and other modern tools."
+        },
+        {
+            title: "Frontend Developer",
+            company: "Fiverr",
+            period: "Aug 2022 - Jun 2023",
+            location: "Remote",
+            description: "Part-time freelance work creating web applications using JavaScript Libraries, HTML5 and related technologies."
+        }
+    ],
 
     projects: [
         {
@@ -72,7 +96,7 @@ const info = {
 
     contact: {
         title: "Let's Get in Touch: Ways to Connect with Me",
-        description: "Thank you for your interest in getting in touch with me. I welcome your feedback, questions, and suggestions. If you have a specific question or comment, please feel free to email me directly at adnanjamilrajpoot@gmail.com. I make an effort to respond to all messages within 24 hours, although it may take me longer during busy periods. Finally, if you prefer to connect on social media, you can connect with me using the social media links below.",
+        description: "Thank you for your interest in getting in touch with me. I welcome your feedback, questions, and suggestions. If you have a specific question or comment, please feel free to email me directly at adnanjamil1109@gmail.com. I make an effort to respond to all messages within 24 hours, although it may take me longer during busy periods. Finally, if you prefer to connect on social media, you can connect with me using the social media links below.",
     },
 
     footer: "© 2025 Adnan Jamil. All Rights Reserved"
