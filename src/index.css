@@ -3,11 +3,84 @@
 @tailwind utilities;
 
 :root {
-  font-family: "Heebo", sans-serif;
-
+  font-family: "Inter", "Heebo", sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f172a;
+  color: white;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Print styles for resume */
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  
+  .print\\:bg-white {
+    background-color: white !important;
+  }
+  
+  .print\\:text-black {
+    color: black !important;
+  }
+  
+  .print\\:bg-gray-100 {
+    background-color: #f3f4f6 !important;
+  }
+  
+  .print\\:border {
+    border: 1px solid #d1d5db !important;
+  }
+  
+  .print\\:border-gray-300 {
+    border-color: #d1d5db !important;
+  }
+  
+  .print\\:text-blue-600 {
+    color: #2563eb !important;
+  }
+  
+  .print\\:no-underline {
+    text-decoration: none !important;
+  }
+  
+  /* Hide buttons when printing */
+  button {
+    display: none !important;
+  }
+  
+  /* Ensure proper page breaks */
+  .page-break {
+    page-break-before: always;
+  }
 }
