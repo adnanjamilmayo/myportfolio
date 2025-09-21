@@ -1,7 +1,7 @@
 const info = {
     main: {
         name: "Adnan Jamil",
-        description: "5+ years building scalable web applications and leading development teams.",
+        description: "Passionate Full Stack Developer crafting innovative web solutions. Specialized in modern JavaScript frameworks, responsive design, and delivering high-performance applications that drive business growth.",
         role: "Full Stack Developer",
         photo: "../photo.png",
         email: "adnanjamil1109@gmail.com",
