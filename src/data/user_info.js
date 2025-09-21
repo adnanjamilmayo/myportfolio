@@ -31,7 +31,7 @@ const info = {
             company: "Revotic AI",
             period: "Sep 2025 - Present",
             location: "Remote",
-            description: "Developing AI-powered applications and full-stack solutions using modern technologies."
+            description: "Leading frontend development for AI-powered applications using React.js, TypeScript, and modern UI frameworks. Building responsive user interfaces and integrating AI capabilities into web applications while ensuring optimal user experience and performance."
         },
         {
             title: "Frontend Developer",
