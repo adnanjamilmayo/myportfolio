@@ -5,27 +5,24 @@ function NotFound() {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-gray-50 dark:bg-[#101e38]">
-      <div className="md:max-w-[1200px] mx-auto h-full border-x border-gray-100 dark:border-gray-800 bg-white dark:bg-[#0e182c]">
-        <div className="flex h-screen justify-center px-6">
-          <div className="self-center text-gray-900 dark:text-gray-300">
-            <div className="flex text-5xl justify-center font-bold gap-4">
-              Oops! <FaSadTear />
-            </div>
-            <div className="text-center leading-7 mt-6 text-lg font-light text-gray-500 dark:text-gray-400">
-              We can&lsquo;t seem to find the page you&lsquo;re looking for.
-              <br />
-              The requested URL &quot;{window.location.href}&quot; was not found
-              on this server.
-            </div>
-            <div className="text-center mt-6">
-              <button
-                onClick={() => navigate("/")}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-4 rounded-xl"
-              >
-                Go back to homepage
-              </button>
-            </div>
+    <div className="min-h-screen bg-[#0f172a] text-white">
+      <div className="flex h-screen justify-center items-center px-4 sm:px-6">
+        <div className="text-center max-w-2xl mx-auto">
+          <div className="flex text-3xl sm:text-5xl justify-center font-bold gap-2 sm:gap-4 mb-4 sm:mb-6">
+            Oops! <FaSadTear />
+          </div>
+          <div className="text-center leading-relaxed mb-6 sm:mb-8 text-base sm:text-lg font-light text-gray-300">
+            We can&lsquo;t seem to find the page you&lsquo;re looking for.
+            <br className="hidden sm:block" />
+            <span className="block sm:inline">The requested URL &quot;{window.location.href}&quot; was not found on this server.</span>
+          </div>
+          <div className="text-center">
+            <button
+              onClick={() => navigate("/")}
+              className="bg-cyan-400 hover:bg-cyan-500 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg sm:rounded-xl transition-colors font-medium text-sm sm:text-base"
+            >
+              Go back to homepage
+            </button>
           </div>
         </div>
       </div>
