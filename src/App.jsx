@@ -2,11 +2,11 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Homepage from './pages/Homepage'
 import About from './pages/About'
 import Projects from './pages/Projects'
-import Blog from './pages/Blog'
-import AI from './pages/AI'
-import Lab from './pages/Lab'
-import Readings from './pages/Readings'
-import Uses from './pages/Uses'
+// import Blog from './pages/Blog'
+// import AI from './pages/AI'
+// import Lab from './pages/Lab'
+// import Readings from './pages/Readings'
+// import Uses from './pages/Uses'
 import NotFound from './pages/404'
 import { useEffect, useState } from 'react';
 import { createContext } from 'react';
@@ -39,11 +39,11 @@ function App() {
 					<Route path='/' element={<Homepage />} />
 					<Route path="about" element={<About />} />
 					<Route path="projects" element={<Projects />} />
-					<Route path="blog" element={<Blog />} />
-					<Route path="ai" element={<AI />} />
-					<Route path="lab" element={<Lab />} />
-					<Route path="readings" element={<Readings />} />
-					<Route path="uses" element={<Uses />} />
+					{/* <Route path="blog" element={<Blog />} /> */}
+					{/* <Route path="ai" element={<AI />} /> */}
+					{/* <Route path="lab" element={<Lab />} /> */}
+					{/* <Route path="readings" element={<Readings />} /> */}
+					{/* <Route path="uses" element={<Uses />} /> */}
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</BrowserRouter>

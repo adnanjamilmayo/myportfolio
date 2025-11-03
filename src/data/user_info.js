@@ -3,7 +3,7 @@ const info = {
         name: "Adnan Jamil",
         description: "Passionate Full Stack Developer crafting innovative web solutions. Specialized in modern JavaScript frameworks, responsive design, and delivering high-performance applications that drive business growth.",
         role: "Full Stack Developer",
-        photo: "../photo.png",
+        photo: "/photo.png.jpg",
         email: "adnanjamil1109@gmail.com",
         // location: "Lahore, Pakistan",
         tracking_id: "G-BNTTBGHXSC"
