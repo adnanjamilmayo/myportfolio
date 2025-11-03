@@ -36,7 +36,7 @@ function App() {
 				}}
 			>
 				<Routes>
-					<Route index element={<Homepage />} />
+					<Route path='/' element={<Homepage />} />
 					<Route path="about" element={<About />} />
 					<Route path="projects" element={<Projects />} />
 					<Route path="blog" element={<Blog />} />
