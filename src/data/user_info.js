@@ -20,23 +20,30 @@ const info = {
 
     skills: {
         languages: ["C", "C++", "JavaScript", "TypeScript"],
-        frameworks: ["NodeJS", "ReactJS", "NextJS", "Tailwind CSS", "Shadcn UI"],
+        frameworks: ["NodeJS", "ReactJS", "NextJS", "BabylonJS", "Tailwind CSS", "Shadcn UI"],
         database: ["PostgreSQL", "MongoDB", "Supabase"],
         tools: ["Git", "GitHub", "GitLab"]
     },
 
     experience: [
         {
-            title: "Full-stack Developer",
+            title: "Full-Stack Developer",
             company: "Revotic AI",
             period: "Sep 2025 - Present",
-            location: "Remote",
+            location: "Onsite",
             description: "Leading frontend development for AI-powered applications using React.js, TypeScript, and modern UI frameworks. Building responsive user interfaces and integrating AI capabilities into web applications while ensuring optimal user experience and performance."
+        },
+        {
+            title: "Full Stack Developer",
+            company: "Freelance",
+            period: "Mar 2024 - Present",
+            location: "Remote",
+            description: "Full stack development projects including frontend and backend solutions using React.js, Next.js, Node.js, Babylon.js, databases, and modern web technologies. Building RESTful APIs, integrating AI capabilities, developing SaaS products, and delivering end-to-end web applications for various clients."
         },
         {
             title: "Frontend Developer",
             company: "Upwork",
-            period: "Mar 2024 - Present",
+            period: "Mar 2024 - May 2025",
             location: "Remote",
             description: "Freelance frontend development projects using JavaScript, React.js and modern web technologies."
         },
