@@ -1,8 +1,8 @@
 const info = {
     main: {
         name: "Adnan Jamil",
-        description: "Passionate Full Stack Developer crafting innovative web solutions. Specialized in modern JavaScript frameworks, responsive design, and delivering high-performance applications that drive business growth.",
-        role: "Full Stack Developer",
+        description: "Passionate Full Stack Engineer building modern, scalable, and user-focused web applications. Experienced with cutting-edge JavaScript frameworks, responsive UI development, and high-performance backend systems. Dedicated to delivering reliable solutions that help businesses grow.",
+        role: "Full Stack Developer & Software Engineer",
         photo: "/photo.png.jpg",
         email: "adnanjamil1109@gmail.com",
         // location: "Lahore, Pakistan",
@@ -20,7 +20,7 @@ const info = {
 
     skills: {
         languages: ["C", "C++", "JavaScript", "TypeScript"],
-        frameworks: ["NodeJS", "ReactJS", "NextJS", "BabylonJS", "Tailwind CSS", "Shadcn UI"],
+        frameworks: ["NodeJS", "ExpressJS", "ReactJS", "NextJS", "BabylonJS", "Tailwind CSS", "Shadcn UI"],
         database: ["PostgreSQL", "MongoDB", "Supabase"],
         tools: ["Git", "GitHub", "GitLab"]
     },
@@ -30,7 +30,7 @@ const info = {
             title: "Full-Stack Developer",
             company: "Revotic AI",
             period: "Sep 2025 - Present",
-            location: "Onsite",
+            location: "Islamabad, Pakistan",
             description: "Leading frontend development for AI-powered applications using React.js, TypeScript, and modern UI frameworks. Building responsive user interfaces and integrating AI capabilities into web applications while ensuring optimal user experience and performance."
         },
         {
@@ -64,6 +64,13 @@ const info = {
     ],
 
     projects: [
+        {
+            title: "Visibio",
+            description: "Create your professional website in 72h. AI speed, agency quality, stress-free and code-free. Visibio: by your side from the very first click. Visibio combines artificial intelligence and human expertise to create your perfect website. Ideal for entrepreneurs and small businesses. Built with React for frontend, Node.js for backend, and Google Cloud Storage for database.",
+            technologies: "https://skillicons.dev/icons?i=react,nodejs,gcp,0,0&perline=5&theme=",
+            // github: "",
+            link: "https://visibio.ca/"
+        },
         {
             title: "E-Commerce App",
             description: "This is my final year project, In my final year project, I spearheaded the development of a full-fledged e-commerce web application using the MERN stack. This hands-on experience showcased my proficiency in full-stack web development and demonstrated my ability to deliver dynamic and user-centric digital solutions.",
