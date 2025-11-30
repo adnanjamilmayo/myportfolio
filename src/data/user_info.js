@@ -96,6 +96,12 @@ const info = {
             description: "A modern, responsive web application for managing meetings with comprehensive dashboard analytics, bulk upload capabilities, and data export functionality. Features real-time analytics, interactive meeting management, advanced filtering, and multi-format data export. Built with React 19.1.1, Vite, and Tailwind CSS with custom UI components and file processing capabilities.",
             technologies: "https://skillicons.dev/icons?i=react,vite,tailwindcss,js,0&perline=5&theme="
         },
+        {
+            title: "Truco Game Admin Panel",
+            description: "A full admin dashboard built for a real-time multiplayer Truco game using MERN + Photon + PlayFab. Features include tournament creation (4 & 8 players), coin/economy management, player statistics, anti-fraud checks, real-time match monitoring, and full backend automation. Designed so the game can be operated without touching code.",
+            technologies: "https://skillicons.dev/icons?i=mongodb,express,react,nodejs,js,0,0&perline=5&theme=",
+            link: "http://torneodetruco.com/"
+        },
     ],
 
     education: [
